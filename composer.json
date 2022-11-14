@@ -1,0 +1,28 @@
+{
+    "name": "creode/page-crawler",
+    "description": "This will allow a page to be crawled for useful content during an indexing process.",
+    "type": "craft-plugin",
+    "keywords": ["crawler", "scout"],
+    "authors": [
+      {
+        "name": "Creode Limited",
+        "homepage": "https://creode.co.uk"
+      }
+    ],
+    "support": {
+      "email": "contact@creode.co.uk",
+      "source": "https://github.com/creode/craft-page-crawler"
+    },
+    "require": {
+      "craftcms/cms": "^3.1.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "creode\\pagecrawler\\": "src/"
+      }
+    },
+    "extra": {
+      "name": "Page Crawler",
+      "handle": "page-crawler"
+    }
+  }
