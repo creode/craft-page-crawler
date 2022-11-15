@@ -11,7 +11,7 @@ jobs:
     steps:
 
       - name: Clone sources
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
           token: ${{ secrets.MY_PAT }}
