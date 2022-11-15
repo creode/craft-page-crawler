@@ -17,7 +17,8 @@
         "source": "https://github.com/creode/craft-page-crawler"
     },
     "require": {
-        "craftcms/cms": "^3.1.0"
+        "craftcms/cms": "^3.1",
+        "phpquery/phpquery": "^0.0.4"
     },
     "autoload": {
         "psr-4": {
@@ -29,6 +30,9 @@
         "handle": "page-crawler"
     },
     "config": {
+        "platform": {
+            "php": "8.0.0"
+        },
         "allow-plugins": {
             "yiisoft/yii2-composer": true,
             "craftcms/plugin-installer": true
