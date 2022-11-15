@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 0.1.3 - 2022-11-15
+
+### Bug Fixes
+
+
+##### Docs
+
+* Updated package name (57ec1f)
+
 ## 0.1.2 - 2022-11-15
 
 ### Bug Fixes
