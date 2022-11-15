@@ -17,7 +17,7 @@ return [
 ];
 ```
 
-## Performing a crawl.
+## Performing a crawl
 
 You can perform a crawl using PHP by calling the following function. This function accepts a relative page path and will return all relevant page content as text.
 
