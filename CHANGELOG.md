@@ -4,5 +4,11 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 0.1.0 - 2022-11-15
+
+### Features
+
+* Added crawler functionality with the ability to remove non required elements from crawled markup, format and limit the output. (c11bce)
+
 ## 0.0.1 - 2022-11-14
 
