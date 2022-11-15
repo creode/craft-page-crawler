@@ -12,6 +12,7 @@
             "homepage": "https://creode.co.uk"
         }
     ],
+    "license": "proprietary",
     "support": {
         "email": "contact@creode.co.uk",
         "source": "https://github.com/creode/craft-page-crawler"
