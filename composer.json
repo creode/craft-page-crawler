@@ -1,5 +1,5 @@
 {
-    "name": "creode/page-crawler",
+    "name": "creode/craft-page-crawler",
     "description": "This will allow a page to be crawled for useful content during an indexing process.",
     "type": "craft-plugin",
     "keywords": [
