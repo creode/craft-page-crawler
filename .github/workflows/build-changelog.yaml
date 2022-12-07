@@ -16,11 +16,6 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
           token: ${{ secrets.MY_PAT }}
 
-      - name: Setup PHP
-        uses: nanasess/setup-php@v3
-        with:
-          php-version: '8.1'
-
       - name: Install dependencies
         run: composer update --prefer-dist --no-interaction
 
