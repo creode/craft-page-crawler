@@ -4,6 +4,25 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 1.0.0 - 2022-12-07
+
+### ⚠ BREAKING CHANGES
+
+* Added version table to readme, Incremented major version. (56054f)
+
+### Bug Fixes
+
+
+##### Ci
+
+* Setup composer not to specify a version of php as platform config (facc6d)
+* Setup composer to require any version of PHP 8 above 8.0 (b61bc6)
+* Setup composer to require any version of PHP 8 above 8.0.2 (7c3e5c)
+
+##### Docs
+
+* Setup action to use PHP@8.1 (87b02a)
+
 ## 0.2.0 - 2022-12-07
 
 ### ⚠ BREAKING CHANGES
