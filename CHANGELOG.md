@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 0.2.0 - 2022-12-07
+
+### ⚠ BREAKING CHANGES
+
+* Added version table to readme, Incremented major version. (56054f)
+
 ## 0.1.4 - 2022-12-07
 
 ### Bug Fixes
