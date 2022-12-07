@@ -4,6 +4,21 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 0.1.4 - 2022-12-07
+
+### Bug Fixes
+
+
+##### Ci
+
+* Setup composer not to specify a version of php as platform config (facc6d)
+* Setup composer to require any version of PHP 8 above 8.0 (b61bc6)
+* Setup composer to require any version of PHP 8 above 8.0.2 (7c3e5c)
+
+##### Docs
+
+* Setup action to use PHP@8.1 (87b02a)
+
 ## 0.1.3 - 2022-11-15
 
 ### Bug Fixes
