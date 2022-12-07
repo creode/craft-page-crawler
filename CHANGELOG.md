@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 1.0.1 - 2022-12-07
+
+### Bug Fixes
+
+
+##### Docs
+
+* Line correction. (8c69fc)
+
 ## 1.0.0 - 2022-12-07
 
 ### ⚠ BREAKING CHANGES
