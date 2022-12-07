@@ -15,7 +15,7 @@ class CrawlerService extends Component
         'script'
     ];
 
-    public function init()
+    public function init(): void
     {
         parent::init();
 
@@ -32,7 +32,13 @@ class CrawlerService extends Component
      * @return string The text extracted from the page during the crawl.
      */
     public function crawl(string $urlPath = '', int $limit = null) {
-        $markup = $this->getPageMarkup(UrlHelper::baseUrl() . $urlPath);
+        $baseUrl = UrlHelper::baseUrl();
+
+        if(substr($baseUrl, -1) != '/') {
+          $baseUrl = $baseUrl . '/';
+        }
+
+        $markup = $this->getPageMarkup($baseUrl . $urlPath);
 
         if(!$markup) {
             return '';
