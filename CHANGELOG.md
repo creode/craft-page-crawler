@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## 1.1.0 - 2023-03-03
+
+### Features
+
+* Adds new functionality to allow the indexer to get page markup behind HTTP Auth. (07b73c)
+
 ## 1.0.1 - 2022-12-07
 
 ### Bug Fixes
