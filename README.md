@@ -16,13 +16,24 @@ Please include and populate the config file "config/page-crawler.php". Use the f
 ```
 <?php
 
+use craft\helpers\App;
+
 return [
     /*
      * CSS selectors for elements which should be removed from rendered page markup during a page crawl.
      */
     'elementsToRemove' => [
 
-    ]
+    ],
+
+    /**
+     * If site is behind a htaccess password, you can add the below variables to your .env to determine if we need
+     * to bypass it.
+     */
+    'http-auth-credentials' => [
+        'username' => App::env('PAGE_CRAWLER_AUTH_USER'),
+        'password' => App::env('PAGE_CRAWLER_AUTH_PASSWORD')
+    ],
 ];
 ```
 
