@@ -62,6 +62,13 @@ class CrawlerService extends Component
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+        if ($this->shouldUseHttpAuthentication()) {
+            $username = Plugin::$plugin->config['http-auth-credentials']['username'];
+            $password = Plugin::$plugin->config['http-auth-credentials']['password'];
+            curl_setopt($curl, CURLOPT_USERPWD, "$username:$password");
+        }
+
         $output = curl_exec($curl);
         $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
         curl_close($curl);
@@ -71,6 +78,29 @@ class CrawlerService extends Component
         }
 
         return $output;
+    }
+
+    /**
+     * Determines if we have any configuration for using Http Auth Credentials when performing a crawl.
+     *
+     * @return boolean
+     */
+    protected function shouldUseHttpAuthentication(): bool
+    {
+        if (empty(Plugin::$plugin->config['http-auth-credentials'])) {
+            return false;
+        }
+
+        $credentials = Plugin::$plugin->config['http-auth-credentials'];
+        if (empty($credentials['username']) || !$credentials['username']) {
+            return false;
+        }
+
+        if (empty($credentials['password']) || !$credentials['password']) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
